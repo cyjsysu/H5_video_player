@@ -1,0 +1,182 @@
+#playerFrame{
+    margin: 0 auto;
+    width: 600px;
+    height: 490px;
+    background-color: black;
+    position: relative;
+}
+#playerArea{
+    width: 100%;
+    height: calc(100% - 40px);
+    /*height: 100%;*/
+    background-color: black;
+
+    position: relative;
+}
+
+#player{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+
+    position: absolute;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#controller{
+    width: 100%;
+    height:40px;
+    background-color: rgba(30, 30, 30, 1);
+    /*background-color: red;*/
+    line-height: 50px;
+    //padding-left: 10px;
+    margin: 0 auto;
+    /*z-index: 217483647;*/
+    position: absolute;
+    bottom: 0;
+}
+
+#controller .controlBtn{
+    height: 40px;
+    width: 50px;
+    /*background-color: darkturquoise;*/
+    text-align: center;
+    float: left;
+
+}
+#controller #controlBar{
+    margin-left: 10px;
+    height: 40px;
+    width: calc(100% - 300px);
+    /*text-align: center;*/
+    float: left;
+
+}
+#controller #showTime{
+    height: 40px;
+    width:100px;
+    /*background-color: red;*/
+    float:left;
+    margin-left: 6px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+#controller #controlVolume{
+    //margin-left:20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    float:left;
+    /*margin-left: 4px;*/
+}
+#playerBtn{
+    height:60%;
+
+    margin: 9px auto;
+    /*防止点击后出现边界*/
+    outline: none;
+
+}
+#playerNext{
+    height:60%;
+
+    margin: 9px auto;
+    /*防止点击后出现边界*/
+    outline: none;
+}
+#allBar{
+    width:100%;
+    height:4px;
+    background-color: rgb(80, 80, 80);
+    margin-top: 18px;
+    position: relative;
+}
+#bufferBar{
+    width: 0;
+    height: 4px;
+    background-color: rgb(160, 160, 160);
+
+    position: absolute;
+
+}
+#playerBar{
+    width: 0;
+    height: 4px;
+    background-color: rgb(30, 144, 255);
+    position: absolute;
+
+}
+/*#volume{*/
+/*    height:60%;*/
+
+/*    margin: auto auto;*/
+/*    !*防止点击后出现边界*!*/
+/*    outline: none;*/
+/*}*/
+#volumeFrame{
+    width: 30px;
+    height: 100px;
+    background-color: rgb(30, 30, 30);
+    display: none;
+    position: absolute;
+    /*text-align: center;*/
+}
+#volBar{
+    width: 2px;
+    height: 72px;
+    background-color: rgb(30, 144, 255);
+    margin: 14px auto;
+    position: relative;
+}
+#volBarBackground{
+    width: 2px;
+    height: 30px;
+    background-color: whitesmoke;
+    position: absolute;
+    /*float: left;*/
+}
+#volButton{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -4px;
+    outline: none;
+    background: url("../img/voice_button.png") no-repeat;
+    background-size: 100% 100%;
+}
+#barButton{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -5px;
+    top: -3.5px;
+    outline: none;
+    background: url("../img/voice_button.png") no-repeat;
+    background-size: 100% 100%;
+}
+#volImg{
+    width:100%;
+    height:100%;
+    background: url("../img/v1.png") no-repeat center;
+    background-size: 60% 60%;
+    cursor:pointer
+}
+#fullScreen{
+    height: 40px;
+    width: 40px;
+    float:left;
+    /*margin-left:10px;*/
+    background: url("../img/fs2.png") no-repeat center;
+    background-size: 50% 50%;
+    cursor:pointer
+}
+
+/*video::-webkit-media-controls{*/
+/*    display:none !important;*/
+/*}*/

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player</title>
+    <link rel="stylesheet" href='./css/player.css' tyle='text/css'>
+    <script type= "text/javascript" src="./js/video_player.js"></script>
+
+</head>
+
+<body>
+    <div id="playerFrame">
+        <div id="playerArea">
+            <video id="player" preload=auto src="./video/ckin.mp4" poster="./img/ckin.jpg">
+                你的浏览器不支持video
+            </video>
+        </div>
+
+        <div id="controller">
+
+            <div class="controlBtn">
+                <input id="playerBtn" type="image" src="./img/on1.png">
+            </div>
+            <div class="controlBtn">
+                <input type="image" id="playerNext" src="./img/next2.png">
+            </div>
+            <div id="controlBar">
+                <div id="allBar">
+                    <div id="bufferBar"></div>
+                    <div id="playerBar"></div>
+                    <div id="barButton"></div>
+                </div>
+            </div>
+            <div id="showTime">00:00/00:00</div>
+            <div id="controlVolume">
+                <div id="volImg"></div>
+                <div id="volumeFrame">
+                    <div id="volBar">
+                        <div id="volBarBackground"></div>
+                        <div id="volButton"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="fullScreen"></div>
+        </div>
+    </div>
+</body>
+</html>
